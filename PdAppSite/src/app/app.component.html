@@ -1,2 +1,62 @@
-<div type="button" class="btn btn-primary"> hi</div>
-<router-outlet></router-outlet>
+<div class="container-fluid">
+  <div class="row Header">
+    <div class="col-md-auto Logo">
+      <img src="../assets/img/Logo.png" alt="Logo">
+    </div>
+    <div class="col justify-content-center align-self-center TextAndProgress">
+      <div class="row justify-content-center PDtext">
+        <div >
+          Maya, 3DMax, Unity для инженерных задач с использованием технологий AR, VR
+        </div>
+      </div>
+      <div class="row" >
+        <div class="progress" style="width: 100%;">
+          <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-auto justify-content-center align-self-center">
+      <a type="button" class="btn btn-light">Войти</a>
+    </div>
+  </div>
+  <div class="row Content">
+    <div class="col-md-auto  SideBar">
+      <div class="navbar justify-content-center align-self-center navbar-light bg-light">
+        <a class="navbar-brand  " href="#">На главную</a>
+      </div>
+      <div class="navbar justify-content-center align-self-center  navbar-light bg-light">
+        <a class="navbar-brand  " href="#">Тема проекта</a>
+      </div>
+      <div class="navbar justify-content-center align-self-center navbar-light bg-light">
+        <a class="navbar-brand  " href="#">Задание на проект</a>
+      </div>
+      <div class="navbar justify-content-center align-self-center  navbar-light bg-light">
+        <a class="navbar-brand  " href="#">Списуок участников</a>
+      </div>
+    </div>
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="row  Wrapper">
+    <div class="row container-fluid WrappButtons ">
+      <div class="col text-center">
+        <a type="button" class="btn btn-light ">Партнеры</a>
+      </div>
+      <div class="col text-center">
+        <a type="button" class="btn btn-light">Гранды</a>
+      </div>
+      <div class="col text-center">
+        <a type="button" class="btn btn-light">Ссылка на Git проекта</a>
+      </div>
+    </div>
+    <div class="row container-fluid WrappText">
+      <div class="col">
+        Сайт создан для визуализации отчетности по проектной деятельности Яранцевым Владимиром Андреевичем
+      </div>
+      <div class="col text-right">
+        © 2020 Московский политехнический университет
+      </div>
+    </div>
+  </div>
+</div>
