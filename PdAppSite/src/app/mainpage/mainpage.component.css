@@ -1,0 +1,34 @@
+.Header{
+    margin-top: 10px;
+}
+.PDtext{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+    
+}
+.TextAndProgress{
+    margin: 0 50px 0 50px;
+}
+
+.Content{
+    margin: 20px 15px 0px 5px ;
+    height: 69vh !important;
+}
+.Logo{
+    margin-left: 70px;
+}
+.Wrapper{
+    background-color: #007bff;
+}
+.WrappButtons{
+    margin-top: 10px;
+}
+.WrappText{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 23px;
+}
