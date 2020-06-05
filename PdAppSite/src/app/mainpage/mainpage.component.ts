@@ -16,8 +16,8 @@ export class MainpageComponent implements OnInit {
 
   async ngOnInit() {
     await this.getPosts().then(() => {
-    })
-    console.log(this.Posts)
+    });
+    console.log(this.Posts);
   }
 
 

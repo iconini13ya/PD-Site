@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="col-md-auto justify-content-center align-self-center">
-        <a type="button" class="btn btn-light" >Войти</a> 
+        <a type="button" class="btn btn-light EnterBu">Войти</a> 
       </div>
     </div>
     <div class="row Content">
@@ -34,9 +34,21 @@
           <a class="navbar-brand  " href="#">Списуок участников</a>
         </div>
       </div>
-      <div class="col">
-        
-      </div>
+      <div class="col PostContent" >
+        <div class="row Posts" *ngFor="let post of Posts">
+        <div class="col-md-auto Posedbyanddate">
+          <div class="row">
+            {{post.postedby}}
+          </div>
+          <div class="row PostDate">
+              {{post.postdate}}
+          </div>
+        </div>
+        <div class="col PostContent">
+          {{post.content}}
+        </div>
+       </div>
+    </div>
     </div>
     <div class="row  Wrapper">
       <div class="row container-fluid WrappButtons ">

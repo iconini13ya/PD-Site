@@ -14,7 +14,7 @@
 
 .Content{
     margin: 20px 15px 0px 5px ;
-    height: 69vh !important;
+    
 }
 .Logo{
     margin-left: 70px;
@@ -31,4 +31,28 @@
     margin-right: 10px;
     margin-top: 30px;
     margin-bottom: 23px;
+}
+.Posts{
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+}
+.PostContent{
+    word-wrap:break-word;
+    margin: 15px 15px 20px 15px;
+}
+.Posedbyanddate{
+    margin: 15px 15px 20px 15px;
+}
+.PostDate{
+    color: gray;
+    font-size: 14px;
+}
+.SideBar{
+    margin-top:15px;
+}
+.PostContent{
+    margin-top:15px;
+}
+.EnterBu{
+    margin-top:20px
 }
