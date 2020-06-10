@@ -56,3 +56,18 @@
 .EnterBu{
     margin-top:20px
 }
+.AddNewPost{
+    margin-bottom: 20px;
+    background-color: #f8f9fa
+}
+.AddNewPost textarea{
+    width: 100%;
+    resize:vertical;
+   
+}
+.BuPublish{
+    margin-top: 15px;
+}
+.PostPublishContent{
+    margin-top: 15px;
+}

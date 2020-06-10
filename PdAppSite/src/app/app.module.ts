@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { HttpClientModule }   from '@angular/common/http';
-
+import { LogInComponent } from './log-in/log-in.component';
+import {FormsModule} from '@angular/forms';
+import { ProjdevelopersComponent } from './projdevelopers/projdevelopers.component';
 
 
 
@@ -15,12 +17,15 @@ import { HttpClientModule }   from '@angular/common/http';
   declarations: [
     AppComponent,
     UserComponent,
-    MainpageComponent
+    MainpageComponent,
+    LogInComponent,
+    ProjdevelopersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

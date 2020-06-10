@@ -1,0 +1,24 @@
+.LoginContainer{
+    background-color: #f8f9fa;
+}
+.EnterText{
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.Loginbu{
+    margin-top: 20px;
+}
+.Passbu{
+    margin-top: 20px;
+}
+.Enterbu{
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+.buEnter{
+    background-color: #007bff;
+}
+.Container{
+    height: 66vh;
+}

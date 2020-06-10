@@ -1,0 +1,65 @@
+.Header{
+    margin-top: 10px;
+}
+.PDtext{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+    
+}
+.TextAndProgress{
+    margin: 0 50px 0 50px;
+}
+
+.Content{
+    margin: 20px 15px 0px 5px ;
+    
+}
+.Logo{
+    margin-left: 70px;
+}
+.Wrapper{
+    background-color: #007bff;
+}
+.WrappButtons{
+    margin-top: 10px;
+}
+.WrappText{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 23px;
+}
+.Posts{
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+}
+.PostContent{
+    word-wrap:break-word;
+    margin: 15px 15px 20px 15px;
+}
+.Posedbyanddate{
+    margin: 15px 15px 20px 15px;
+}
+.PostDate{
+    color: gray;
+    font-size: 14px;
+}
+.SideBar{
+    margin-top:15px;
+}
+.PostContent{
+    margin-top:15px;
+}
+.EnterBu{
+    margin-top:20px
+}
+.LoginedIn{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.OutBu{
+    margin-top:10px;
+}

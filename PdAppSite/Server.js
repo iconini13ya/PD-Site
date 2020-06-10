@@ -37,6 +37,27 @@ app.get('/posts', function (req, res) {
       res.send(result);
     });
   });
+
+  app.get('/pdProgress', function (req, res) {
+    connection.query("SELECT * FROM pdsite.pdprogress",(err,result)=>{
+      res.send(result);
+    });
+  });
+
+  app.get('/Login',function(req,res){
+    connection.query(`SELECT * FROM pdsite.usersdata WHERE login= "`+ req.query.login +`" and password= "`+req.query.password+`"`,(err,result)=>{
+      res.send(result);
+    });
+  
+  });
+
+  app.post("/EditPost",function(req,res){
+    connection.query(`INSERT INTO pdsite.posts (postedby,postdate,content) VALUES ("`+req.query.postedBy+`","`+req.query.date+`","`+req.query.postContent+`")`,(err,result)=>{
+      res.send(result);
+    });
+    //INSERT INTO `pdsite`.`posts` (`postedby`, `postdate`, `content`) VALUES ('Владимир Яранцев', '09.06.2020', 'Третий пост');
+    
+  });
   
   app.listen(3000, function () {
     connection.connect(function(err){

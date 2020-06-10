@@ -1,0 +1,18 @@
+<div class="Container">
+    <div class="LoginContainer">
+        <div class="row EnterText justify-content-center align-self-center">
+                Вход
+        </div>
+        <div class="row Loginbu justify-content-center align-self-center">
+                <input [(ngModel)]="UserLogin" placeholder="Login">
+        </div>
+        <div class="row Passbu justify-content-center align-self-center">
+                <input type="password" [(ngModel)]="UserPassword" placeholder="Password">
+        </div>
+        <div class="row Enterbu justify-content-center align-self-center">
+                <a type="button" class=" btn buEnter" (click)="Login()">Войти</a>
+        </div>
+    </div>
+</div>
+
+
