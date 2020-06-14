@@ -17,11 +17,9 @@ export class LogInComponent implements OnInit {
   
   ngOnInit(): void {
     this.LoginCorrect=false;
-    // this.UserLogin="";
-    // this.UserPassword="";
-    this.UserLogin="iconini13ya";
-    this.UserPassword="VjSa1Der";
-    //Убрать после режима отладки!!!!!
+    this.UserLogin="";
+    this.UserPassword="";
+    
   }
   async Login(){
     let UserData;
