@@ -12,9 +12,11 @@ export class LogInComponent implements OnInit {
 
   UserLogin:string;
   UserPassword:string;
+  LoginCorrect;
   constructor(private SQLService: SqlrequestService, private MainComponent:AppComponent,private router:Router) { }
   
   ngOnInit(): void {
+    this.LoginCorrect=false;
     // this.UserLogin="";
     // this.UserPassword="";
     this.UserLogin="iconini13ya";
@@ -28,7 +30,7 @@ export class LogInComponent implements OnInit {
        });
     UserData = UserData['body'];
     if(UserData==0){
-    console.log("Неверный логин/пароль");  
+      this.LoginCorrect=true;
     }
     else{
       this.SQLService.User=UserData[0];

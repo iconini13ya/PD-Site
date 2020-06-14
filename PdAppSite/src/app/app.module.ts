@@ -9,6 +9,11 @@ import { HttpClientModule }   from '@angular/common/http';
 import { LogInComponent } from './log-in/log-in.component';
 import {FormsModule} from '@angular/forms';
 import { ProjdevelopersComponent } from './projdevelopers/projdevelopers.component';
+import { GiturlComponent } from './giturl/giturl.component';
+import { AdminBarComponent } from './admin-bar/admin-bar.component';
+import { DevelopersComponent } from './developers/developers.component';
+import { ProjectThemeComponent } from './project-theme/project-theme.component';
+import { ProjectWorkComponent } from './project-work/project-work.component';
 
 
 
@@ -19,7 +24,12 @@ import { ProjdevelopersComponent } from './projdevelopers/projdevelopers.compone
     UserComponent,
     MainpageComponent,
     LogInComponent,
-    ProjdevelopersComponent
+    ProjdevelopersComponent,
+    GiturlComponent,
+    AdminBarComponent,
+    DevelopersComponent,
+    ProjectThemeComponent,
+    ProjectWorkComponent
   ],
   imports: [
     BrowserModule,

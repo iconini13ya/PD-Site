@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col text-center">
+        Ф.И.О
+    </div>
+    <div class="col text-center">
+        Номер группы
+    </div>
+    <div class="col text-center">
+        Роль
+    </div>
+    <div class="col text-centers">
+        Контакты для связи
+    </div>
+</div>
+<div class="dev" *ngFor="let dev of developers">
+    <div class="row">
+        <div class="col text-center">
+            {{dev.FIO}}
+        </div>
+        <div class="col text-center">
+            {{dev.GroupNum}}
+        </div>
+        <div class="col text-center">
+            {{dev.Role}}
+        </div>
+        <div class="col text-centers">
+            {{dev.Contact}}
+        </div>
+    </div>
+</div>

@@ -46,6 +46,21 @@ export class AppComponent implements OnInit {
     this.sqlService.User="";
     location.reload();
   }
+  goGit(){
+    this.router.navigate(["/Git"]);
+  }
+  goAdmin(){
+    this.router.navigate(['/Admin']);
+  }
+  goDev(){
+    this.router.navigate(["/Developers"]);
+  }
+  goTheme(){
+    this.router.navigate(["/ProjectTheme"]);
+  }
+  goWork(){
+    this.router.navigate(["/ProjectWork"])
+  }
 
 }
 
