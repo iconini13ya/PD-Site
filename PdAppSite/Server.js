@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var mysql = require('mysql2');
-//Версия для хостинга сайтом 
+//Версия для хостинга Политехом
 const jsonParser = express.json();
 
 // function getMySQLConnection() {
@@ -14,9 +14,9 @@ const jsonParser = express.json();
 // }
 
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  database: "pdsite",
+  host: "std-mysql",
+  user: "std_755",
+  database: "std_755",
   password: "VjSa1Der"
 });
 
@@ -33,26 +33,26 @@ app.use(function(req, res, next) {
 
 
 app.get('/posts', function (req, res) {
-    connection.query("SELECT * FROM pdsite.posts",(err,result)=>{
+    connection.query("SELECT * FROM std_755.posts",(err,result)=>{
       res.send(result);
     });
   });
 
   app.get('/pdProgress', function (req, res) {
-    connection.query("SELECT * FROM pdsite.pdprogress",(err,result)=>{
+    connection.query("SELECT * FROM std_755.pdprogress",(err,result)=>{
       res.send(result);
     });
   });
 
   app.get('/Login',function(req,res){
-    connection.query(`SELECT * FROM pdsite.usersdata WHERE login= "`+ req.query.login +`" and password= "`+req.query.password+`"`,(err,result)=>{
+    connection.query(`SELECT * FROM std_755.usersdata WHERE login= "`+ req.query.login +`" and password= "`+req.query.password+`"`,(err,result)=>{
       res.send(result);
     });
   
   });
 
   app.post("/EditPost",function(req,res){
-    connection.query(`INSERT INTO pdsite.posts (postedby,postdate,content) VALUES ("`+req.query.postedBy+`","`+req.query.date+`","`+req.query.postContent+`")`,(err,result)=>{
+    connection.query(`INSERT INTO std_755.posts (postedby,postdate,content) VALUES ("`+req.query.postedBy+`","`+req.query.date+`","`+req.query.postContent+`")`,(err,result)=>{
       res.send(result);
     });
     //INSERT INTO `pdsite`.`posts` (`postedby`, `postdate`, `content`) VALUES ('Владимир Яранцев', '09.06.2020', 'Третий пост');
