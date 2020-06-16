@@ -3,7 +3,8 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { formatDate } from '@angular/common';
 
 
-const serverUrl = "http://localhost:3000/";
+const serverUrl = "http://80.87.194.192:3000/"
+//"http://localhost:3000/";
 
 @Injectable({
   providedIn: 'root'
