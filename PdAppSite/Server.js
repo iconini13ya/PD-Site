@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var mysql = require('mysql2');
- 
+//Версия для хостинга сайтом 
 const jsonParser = express.json();
 
 // function getMySQLConnection() {
