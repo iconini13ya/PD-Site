@@ -15,10 +15,9 @@ const jsonParser = express.json();
 
 function getMySQLConnection() {
 	return mysql.createConnection({
-    host: "std-mysql",
-    user: "std_755",
-    database: "std_755",
-    password: "VjSa1Der"
+    host: "veteran-chest.ru",
+    user: "honor",
+    password: "b4uld103"
 	});
 }
 
@@ -75,7 +74,7 @@ app.get('/posts', function (req, res) {
     
   });
   
-  app.listen(3000, function () {
+  app.listen(8050, function () {
     var connection = getMySQLConnection();
     connection.connect(function(err){
       if (err) {
@@ -86,5 +85,5 @@ app.get('/posts', function (req, res) {
         connection.end();
       }
    });
-    console.log('Слушаю на порту 3000');
+    console.log('Слушаю на порту 8050');
   });
