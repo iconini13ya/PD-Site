@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { formatDate } from '@angular/common';
 
-const serverUrl = "http://localhost:8050/"
+const serverUrl = "http://майапд.рус/back"
 
 @Injectable({
   providedIn: 'root'
