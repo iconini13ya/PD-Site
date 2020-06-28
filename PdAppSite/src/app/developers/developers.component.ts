@@ -39,7 +39,7 @@ export class DevelopersComponent implements OnInit {
 {
   FIO:"Чулкин Д.С.",
   GroupNum:"171-334",
-  Role:"Разработчик сайта для проектной деятельности",
+  Role:"Помощники по программному продукту Maya 3D, Bifrost",
   Contact:"https://github.com/Bydmak"
 },
 {
