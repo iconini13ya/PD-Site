@@ -9,7 +9,7 @@ const jsonParser = express.json();
 // 	  host: "localhost",
 //     user: "root",
 //     database: "pdsite",
-//     password: "VjSa1Der"
+//    
 // 	});
 // }
 
@@ -17,7 +17,7 @@ function getMySQLConnection() {
 	return mysql.createConnection({
     host: "veteran-chest.ru",
     user: "honor",
-    password: "b4uld103"
+    
 	});
 }
 
@@ -25,7 +25,7 @@ function getMySQLConnection() {
 //   host: "std-mysql",
 //   user: "std_755",
 //   database: "std_755",
-//   password: "VjSa1Der"
+//  
 // });
 
 
